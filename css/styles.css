@@ -12634,3 +12634,48 @@ section.resume-section {
         font-size: 14px;
         color: #555;
     }
+
+#portfolioModal .modal-body {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#portfolioModal .project-details {
+    flex: 1;
+}
+
+#portfolioModal #modalImage {
+    max-width: 48%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform .18s ease;
+}
+
+    #portfolioModal #modalImage:hover {
+        transform: scale(1.02);
+    }
+
+.what-i-did-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+#modalLinkButton.custom-btn {
+    color: #f0f0f0; /* أبيض فاتح */
+    background-color: #007bff; /* خلفية زر Bootstrap الأساسية */
+    border: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+#modalLinkButton.custom-btn:hover {
+    background-color: #0056b3; /* أغمق قليلًا عند المرور */
+    color: #ffffff; /* نص أبيض */
+}

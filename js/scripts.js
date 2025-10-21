@@ -31,4 +31,33 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    var portfolioModal = document.getElementById('portfolioModal');
+    if (!portfolioModal) return;
+
+    portfolioModal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget; // the clicked portfolio item
+        if (!button) return;
+
+        var title = button.getAttribute('data-title') || '';
+        var img = button.getAttribute('data-img') || '';
+        var desc = button.getAttribute('data-description') || '';
+        var link = button.getAttribute('data-link') || '';
+
+        portfolioModal.querySelector('.modal-title').textContent = title;
+
+        var modalImage = portfolioModal.querySelector('#modalImage');
+        modalImage.src = img;
+        modalImage.alt = title || 'Project image';
+        modalImage.style.cursor = link ? 'pointer' : 'default';
+
+        // clicking the image opens the external link in a new tab
+        modalImage.onclick = function () {
+            if (link) window.open(link, '_blank');
+        };
+
+        portfolioModal.querySelector('#modalDescription').textContent = desc;
+        var modalLinkButton = portfolioModal.querySelector('#modalLinkButton');
+        modalLinkButton.href = link;
+    });
+
 });
