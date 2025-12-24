@@ -12679,3 +12679,11 @@ section.resume-section {
     background-color: #0056b3; /* أغمق قليلًا عند المرور */
     color: #ffffff; /* نص أبيض */
 }
+
+body {
+    font-family: "Mulish", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Saira Extra Condensed", Arial, sans-serif;
+}
