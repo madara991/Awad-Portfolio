@@ -307,8 +307,11 @@
 
                 <div class="portfolio-grid">
                     <!-- مشروع 1: Steam -->
-                    <a href="javascript:void(0)" class="portfolio-item"
-                       data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    <a href="https://store.steampowered.com/app/2896760/Azooma_Escape/"
+   target="_blank"
+   class="portfolio-item"
+   data-bs-toggle="modal"
+   data-bs-target="#portfolioModal"
                        data-title="Azooma Escape"
                        data-link="https://store.steampowered.com/app/2896760/Azooma_Escape/"
                        data-img="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2896760/4e6760f5454aa03d7245d874a7fb221a8f8955b4/header.jpg"
@@ -325,8 +328,12 @@
                     </a>
 
                     <!-- مشروع 2: Google Play -->
-                    <a href="javascript:void(0)" class="portfolio-item"
-                       data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    <a href="https://play.google.com/store/apps/details?id=com.almulazimanas.almulazimanas"
+
+   target="_blank"
+   class="portfolio-item"
+   data-bs-toggle="modal"
+   data-bs-target="#portfolioModal"
                        data-title="الملازم انس | امن الطرق"
                        data-link="https://play.google.com/store/apps/details?id=com.almulazimanas.almulazimanas"
                        data-img="https://play-lh.googleusercontent.com/psmCBSXOkIJ8oWlhjSmIoxf8xR3qdA2hnwTbkBtEAfIu1hsSw0I6PcPW36nHEq40Iwmp=w240-h480-rw"
@@ -341,8 +348,11 @@
                     </a>
 
                     <!-- مشروع 3 -->
-                    <a href="javascript:void(0)" class="portfolio-item"
-                       data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    <a href="https://play.google.com/store/apps/details?id=com.maber.alkhatar"
+                      target="_blank"
+   class="portfolio-item"
+   data-bs-toggle="modal"
+   data-bs-target="#portfolioModal"
                        data-title="معابر الخطر"
                        data-link="https://play.google.com/store/apps/details?id=com.maber.alkhatar"
                        data-img="https://play-lh.googleusercontent.com/JVK9q25snpQSYbkEMlfIWe3CegJj4fE0n-BEwzjZZYGBQeJXsBD4fyQwH_Nm4tv-X47t=w240-h480-rw"
@@ -358,8 +368,11 @@
                     </a>
 
                     <!-- مشروع 4 -->
-                    <a href="javascript:void(0)" class="portfolio-item"
-                       data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    <a href="https://play.google.com/store/apps/details?id=com.BWZStudio.ARM1"
+                       target="_blank"
+   class="portfolio-item"
+   data-bs-toggle="modal"
+   data-bs-target="#portfolioModal"
                        data-title="Wizard Castle"
                        data-link="https://play.google.com/store/apps/details?id=com.BWZStudio.ARM1"
                        data-img="https://play-lh.googleusercontent.com/Y9OPqnPU-sHfr9m1PclBHvGk2AH0qNME4nORtMiubjIBEljAszOPYbAQl4uy1SEwMA=s256-rw"
@@ -378,8 +391,11 @@
                 <h4 class="mt-5 mb-3">Personal Projects</h4>
                 <div class="portfolio-grid">
                     <!-- مشروع حر 1 -->
-                    <a href="javascript:void(0)" class="portfolio-item"
-                       data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    <a href="https://github.com/madara991/Mercenaries-of-the-world"
+                      target="_blank"
+   class="portfolio-item"
+   data-bs-toggle="modal"
+   data-bs-target="#portfolioModal"
                        data-title="Mercenaries of the world"
                        data-link="https://github.com/madara991/Mercenaries-of-the-world"
                        data-img="https://github.com/user-attachments/assets/ae3164fb-0796-43e5-b493-c535d9b09b32"
@@ -395,8 +411,11 @@
                     </a>
 
                     <!-- مشروع حر 2 -->
-                    <a href="javascript:void(0)" class="portfolio-item"
-                       data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                    <a href="https://github.com/madara991/only-jump-game"
+                      target="_blank"
+   class="portfolio-item"
+   data-bs-toggle="modal"
+   data-bs-target="#portfolioModal"
                        data-title="Only Jump"
                        data-link="https://github.com/madara991/only-jump-game"
                        data-img="https://github.com/user-attachments/assets/63d8c503-1861-4904-8bc3-1df9e869d523"
@@ -441,36 +460,33 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script>
-       document.addEventListener("DOMContentLoaded", function () {
-    const portfolioItems = document.querySelectorAll(".portfolio-item");
-    const modalTitle = document.getElementById("portfolioModalLabel");
-    const modalImage = document.getElementById("modalImage");
-    const modalDescription = document.getElementById("modalDescription");
-    const modalLinkButton = document.getElementById("modalLinkButton"); // ✅ أضفنا هذا السطر
+        document.addEventListener("DOMContentLoaded", function () {
 
-    portfolioItems.forEach(item => {
-        item.addEventListener("click", function () {
-            const title = this.getAttribute("data-title");
-            const link = this.getAttribute("data-link");
-            const imgSrc = this.getAttribute("data-img");
-            let description = this.getAttribute("data-description");
+            const portfolioItems = document.querySelectorAll(".portfolio-item");
+            const modalTitle = document.getElementById("portfolioModalLabel");
+            const modalImage = document.getElementById("modalImage");
+            const modalDescription = document.getElementById("modalDescription");
+            const modalLinkButton = document.getElementById("modalLinkButton");
 
-            // تنسيق خاص لـ "What I Did"
-            description = description.replace(
-                /<strong>What I Did ?:<\/strong>/i,
-                '<div class="what-i-did-title">What I Did ?</div>'
-            );
+            portfolioItems.forEach(item => {
+                item.addEventListener("click", function (e) {
 
-            // إعداد عناصر المودال
-            modalTitle.textContent = title;
-            modalImage.src = imgSrc;
-            modalDescription.innerHTML = description;
+                    // Prevent normal navigation (so modal opens instead)
+                    e.preventDefault();
 
-            // تعيين رابط الزر
-            modalLinkButton.href = link;
+                    const title = this.getAttribute("data-title");
+                    const link = this.getAttribute("href");
+                    const imgSrc = this.getAttribute("data-img");
+                    let description = this.getAttribute("data-description");
+
+                    modalTitle.textContent = title;
+                    modalImage.src = imgSrc;
+                    modalDescription.innerHTML = description;
+                    modalLinkButton.href = link;
+                });
+            });
+
         });
-    });
-});
     </script>
 
 
